@@ -12,11 +12,11 @@ const About = () => {
     }, [])
 
     return (
-        <div className="flex items-center">
-            <div data-aos="fade-right" className="w-1/2 px-20">
+        <div className="grid md:grid-cols-2 items-center">
+            <div data-aos="fade-right" className="px-20">
                 <Lottie animationData={aboutAnimation} />
             </div>
-            <div className="w-1/2 p-5">
+            <div className="p-5">
                 <div data-aos="fade-left">
                     <h1 className="text-3xl font-semibold mb-5">About Me</h1>
                     <p>Hello, I am Aminul Islam Biddut, a MERN Stack Developer from Jamalpur, Bangladesh.

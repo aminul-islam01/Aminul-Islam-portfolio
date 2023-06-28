@@ -1,17 +1,25 @@
 import ProgressBar from "@ramonak/react-progress-bar";
-import Fade from 'react-reveal/Fade';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Skills = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, [])
+
     return (
         <div className="p-5">
             <h2 className="text-3xl font-semibold text-center mb-5">Skills</h2>
-            <div className="grid grid-cols-2 gap-5">
-                <Fade bottom>
-                    <ProgressBar
+            <div  className="grid md:grid-cols-2 gap-5">
+                   <div data-aos="fade-right">
+                   <ProgressBar
                         completed={90}
                         bgColor="#f03a3a"
                         labelAlignment="left"
                         labelColor="#ffffff"
+                        margin="10px"
                         transitionDuration="3s"
                         animateOnRender
                         maxCompleted={100}
@@ -22,6 +30,7 @@ const Skills = () => {
                         bgColor="#3aa2f0"
                         labelAlignment="left"
                         labelColor="#ffffff"
+                        margin="10px"
                         transitionDuration="3s"
                         animateOnRender
                         maxCompleted={100}
@@ -32,6 +41,7 @@ const Skills = () => {
                         bgColor="#3aa2f0"
                         labelAlignment="left"
                         labelColor="#ffffff"
+                        margin="10px"
                         transitionDuration="3s"
                         animateOnRender
                         maxCompleted={100}
@@ -42,18 +52,20 @@ const Skills = () => {
                         bgColor="#0f29dd"
                         labelAlignment="left"
                         labelColor="#ffffff"
+                        margin="10px"
                         transitionDuration="3s"
                         animateOnRender
                         maxCompleted={100}
                         customLabel="Bootstrap"
                     />
-                </Fade>
-                <Fade bottom>
-                    <ProgressBar
+                   </div>
+                   <div data-aos="fade-left">
+                   <ProgressBar
                         completed={70}
                         bgColor="#ffef18"
                         labelAlignment="left"
                         labelColor="#ffffff"
+                        margin="10px"
                         transitionDuration="3s"
                         animateOnRender
                         maxCompleted={100}
@@ -64,6 +76,7 @@ const Skills = () => {
                         bgColor="#18e1ff"
                         labelAlignment="left"
                         labelColor="#ffffff"
+                        margin="10px"
                         transitionDuration="3s"
                         animateOnRender
                         maxCompleted={100}
@@ -74,6 +87,7 @@ const Skills = () => {
                         bgColor="#48c87a"
                         labelAlignment="left"
                         labelColor="#ffffff"
+                        margin="10px"
                         transitionDuration="3s"
                         animateOnRender
                         maxCompleted={100}
@@ -84,12 +98,13 @@ const Skills = () => {
                         bgColor="#3fae68"
                         labelAlignment="left"
                         labelColor="#ffffff"
+                        margin="10px"
                         transitionDuration="3s"
                         animateOnRender
                         maxCompleted={100}
                         customLabel="Express"
                     />
-                </Fade>
+                   </div>
             </div>
         </div>
     );
