@@ -12,7 +12,7 @@ const About = () => {
     }, [])
 
     return (
-        <div id="about" className="grid md:grid-cols-2 items-center">
+        <div id="about" className="grid md:grid-cols-2 items-center bg-base-200">
             <div data-aos="fade-right" className="px-20">
                 <Lottie animationData={aboutAnimation} />
             </div>

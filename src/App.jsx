@@ -10,7 +10,7 @@ import Skills from './Components/Skills'
 function App() {
 
   return (
-    <div>
+    <div className='bg-base-200'>
       <Navbar></Navbar>
       <Banner></Banner>
       <About></About>

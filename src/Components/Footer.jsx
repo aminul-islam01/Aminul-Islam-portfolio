@@ -4,9 +4,9 @@ import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhoneAl
 const Footer = () => {
     return (
         <div>
-            <footer className="footer footer-center p-10 bg-primary text-primary-content">
+            <footer className="footer footer-center p-10 bg-base-300 text-base-content">
                 <div>
-                    <h2 className="text-2xl font-bold">AMINUL ISLAM BIDDUT</h2>
+                    <a className="text-xl font-bold cursor-pointer font-serif text-green-500">AMINUL <span className="text-red-500">ISLAM </span>BIDDUT</a>
                     <div className="space-x-3">
                         <span className="cursor-pointer"><FaEnvelope className="inline-block"></FaEnvelope> aminulislambiddut1@gmail.com</span>
                         <span className="cursor-pointer"><FaPhoneAlt className="inline-block"></FaPhoneAlt> +8801922112718</span>

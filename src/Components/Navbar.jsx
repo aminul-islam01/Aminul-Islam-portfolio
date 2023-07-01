@@ -1,6 +1,34 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+
+  const [dark, setDark] = useState(false);
+
+
+    useEffect(() => {
+        const myTheme = localStorage.getItem('myTheme');
+        if(myTheme === 'dark'){
+            setDark(true)
+        }else{
+            setDark(false)
+        }
+        document.querySelector('html').setAttribute('data-theme', myTheme)
+    }, [dark])
+
+    const handleTheme = (event) => {
+        if(event === true){
+            localStorage.setItem('myTheme', 'dark')
+            setDark(!dark)
+        }else{
+            localStorage.setItem('myTheme', 'light')
+            setDark(!dark)
+        }
+    }
+
+
     const navItem = <>
         <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} >
           HOME
@@ -24,8 +52,8 @@ const Navbar = () => {
         </li>
     </>
     return (
-        <div className="navbar fixed top-0 left-0 z-10 bg-black bg-opacity-50">
-            <div className="navbar-start">
+        <div className="navbar fixed top-0 left-0 z-10 bg-base-200">
+            <div className="navbar-start flex-1">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -34,13 +62,17 @@ const Navbar = () => {
                     {navItem}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">AMINUL ISLAM BIDDUT</a>
+                <a className="text-xl font-bold cursor-pointer font-serif text-green-500">AMINUL <span className="text-red-500">ISLAM </span>BIDDUT</a>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-white">
+                <ul className="menu menu-horizontal px-1 font-bold">
                     {navItem}
                 </ul>
             </div>
+            <span className="text-3xl ms-auto cursor-pointer">
+                {dark === false? <FaMoon onClick={() => handleTheme(true)}></FaMoon>
+                :<FaSun onClick={() => handleTheme(false)}></FaSun>}
+            </span>
         </div>
     );
 };
