@@ -10,7 +10,7 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="p-5">
+        <div id="skills" className="p-5">
             <h2 className="text-3xl font-semibold text-center mb-5">Skills</h2>
             <div  className="grid md:grid-cols-2 gap-5">
                    <div data-aos="fade-right">

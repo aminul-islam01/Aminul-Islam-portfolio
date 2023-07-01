@@ -6,15 +6,15 @@ import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 
 function App() {
-  
+
   return (
-   <div>
-    <Navbar></Navbar>
-    <Banner></Banner>
-    <About></About>
-    <Skills></Skills>
-    <Projects></Projects>
-   </div>
+    <div>
+      <Navbar></Navbar>
+      <Banner></Banner>
+      <About></About>
+      <Skills></Skills>
+      <Projects></Projects>
+    </div>
   )
 }
 

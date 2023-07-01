@@ -1,10 +1,27 @@
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     const navItem = <>
-        <li><a>HOME</a></li>
-        <li><a>ABOUT</a></li>
-        <li><a>PROJECTS</a></li>
-        <li><a>CONTACT</a></li>
+        <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} >
+          HOME
+        </Link>
+        </li>
+        <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} >
+          ABOUT
+        </Link>
+        </li>
+        <li><Link activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500} >
+          PROJECT
+        </Link>
+        </li>
+        <li><Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500} >
+          PROJECT
+        </Link>
+        </li>
+        <li><Link activeClass="active" to="contacts" spy={true} smooth={true} offset={50} duration={500} >
+          CONTACT
+        </Link>
+        </li>
     </>
     return (
         <div className="navbar bg-black bg-opacity-50">
