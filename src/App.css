@@ -2,20 +2,3 @@
   max-width: 1280px;
   margin: 0 auto;
 }
-
-.project-container{
-  /* background-image: url('../src/assets/images/project1.png'); */
-  /* position: relative;
-  overflow: hidden; */
-}
-/* .project {
-  position: absolute;
-  left: 0;
-  right: 0;
-  transition: 3s;
-}
-.project:hover {
-  left: 0;
-  right: 0;
-  bottom: 0;
-} */

@@ -11,7 +11,7 @@ const Navbar = () => {
         </Link>
         </li>
         <li><Link activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500} >
-          PROJECT
+          Skills
         </Link>
         </li>
         <li><Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500} >
@@ -24,7 +24,7 @@ const Navbar = () => {
         </li>
     </>
     return (
-        <div className="navbar bg-black bg-opacity-50">
+        <div className="navbar fixed top-0 left-0 z-10 bg-black bg-opacity-50">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
