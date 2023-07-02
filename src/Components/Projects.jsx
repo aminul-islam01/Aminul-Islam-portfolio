@@ -2,7 +2,7 @@ import project1 from '../assets/images/project1.png'
 import project2 from '../assets/images/project2.png'
 import project3 from '../assets/images/project3.png'
 import Fade from 'react-reveal/Fade';
-import { FaGithubSquare } from 'react-icons/fa';
+import { FaArrowRight, FaGithubSquare } from 'react-icons/fa';
 
 
 
@@ -26,7 +26,7 @@ const Projects = () => {
                            <div className='space-x-5 mt-10'>
                             <a className='font-bold' href="https://github.com/aminul-islam01/draw-master-client" target="_blank" rel="noopener noreferrer">Client site <FaGithubSquare className="inline-block"></FaGithubSquare></a>
                             <a className='font-bold' href="https://github.com/aminul-islam01/draw-master-server" target="_blank" rel="noopener noreferrer">Server site <FaGithubSquare className="inline-block"></FaGithubSquare></a>
-                            <a className='font-bold' href="https://draw-master-class.web.app/" target="_blank" rel="noopener noreferrer">Live demo</a>
+                            <a className='font-bold' href="https://draw-master-class.web.app/" target="_blank" rel="noopener noreferrer">Live demo <FaArrowRight className='inline-block'></FaArrowRight></a>
                            </div>
                     </div>
                     </Fade>
@@ -47,7 +47,7 @@ const Projects = () => {
                             <div className='space-x-5 mt-10'>
                             <a className='font-bold' href="https://github.com/aminul-islam01/fun-car-play-client" target="_blank" rel="noopener noreferrer">Client site <FaGithubSquare className="inline-block"></FaGithubSquare></a>
                             <a className='font-bold' href="https://github.com/aminul-islam01/fun-car-play-server" target="_blank" rel="noopener noreferrer">Server site <FaGithubSquare className="inline-block"></FaGithubSquare></a>
-                            <a className='font-bold' href="https://fun-car-play.web.app/" target="_blank" rel="noopener noreferrer">Live demo</a>
+                            <a className='font-bold' href="https://fun-car-play.web.app/" target="_blank" rel="noopener noreferrer">Live demo <FaArrowRight className='inline-block'></FaArrowRight></a>
                            </div>
                     </div>
                     </Fade>
@@ -70,7 +70,7 @@ const Projects = () => {
                             <div className='space-x-5 mt-10'>
                             <a className='font-bold' href="https://github.com/aminul-islam01/cooks-compendium-client" target="_blank" rel="noopener noreferrer">Client site <FaGithubSquare className="inline-block"></FaGithubSquare></a>
                             <a className='font-bold' href="https://github.com/aminul-islam01/cooks-compendium-server" target="_blank" rel="noopener noreferrer">Server site <FaGithubSquare className="inline-block"></FaGithubSquare></a>
-                            <a className='font-bold' href="https://cooks-compendium.web.app/" target="_blank" rel="noopener noreferrer">Live demo</a>
+                            <a className='font-bold' href="https://cooks-compendium.web.app/" target="_blank" rel="noopener noreferrer">Live demo <FaArrowRight className='inline-block'></FaArrowRight></a>
                            </div>
                     </div>
                     </Fade>
