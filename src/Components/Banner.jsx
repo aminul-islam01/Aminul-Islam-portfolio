@@ -25,7 +25,7 @@ const Banner = () => {
                 />
                 <p>Through my expertise as a MERN stack developer, I have the ability to build web applications that deliver exceptional results. By harnessing the power of MongoDB, Express.js, React.js, and Node.js, I create dynamic, efficient, and scalable websites that cater to your specific needs.</p>
                 <button className="btn btn-outline btn-primary mt-5">
-                    <a href="/public/Aminul Islam Biddut-Resume.pdf" download>Download Resume <FaArrowAltCircleDown className='inline-block'></FaArrowAltCircleDown> </a>
+                    <a href="/Aminul-Resume.pdf" download>Download Resume <FaArrowAltCircleDown className='inline-block'></FaArrowAltCircleDown> </a>
                 </button>
             </div>
             <div className='bg-green-transparent'>
