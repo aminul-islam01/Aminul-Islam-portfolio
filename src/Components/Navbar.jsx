@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Link } from "react-scroll";
+import logo from '../assets/images/logo.png'
 
 const Navbar = () => {
 
@@ -52,7 +53,7 @@ const Navbar = () => {
         </li>
     </>
     return (
-        <div className="navbar fixed top-0 left-0 z-10 bg-base-200">
+        <div className="navbar sticky top-0 left-0 z-10 bg-base-100 opacity-80">
             <div className="navbar-start flex-1">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,7 +63,9 @@ const Navbar = () => {
                     {navItem}
                     </ul>
                 </div>
-                <a className="text-xl font-bold cursor-pointer font-serif text-green-500">AMINUL <span className="text-red-500">ISLAM </span>BIDDUT</a>
+                <a>
+                    <img className="w-80 cursor-pointer" src={logo} alt="" />
+                </a>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 font-bold">

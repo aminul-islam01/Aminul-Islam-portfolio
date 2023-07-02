@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import Swal from 'sweetalert2';
 import Lottie from "lottie-react";
 import animation from '../assets/animation4.json'
+import { FaPaperPlane } from 'react-icons/fa';
 
 const Contact = () => {
     const form = useRef();
@@ -28,6 +29,7 @@ const Contact = () => {
 
     return (
         <div id='contact' className='mb-5'>
+            <h2 className='text-3xl font-semibold text-center mt-10'>Contact Me</h2>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left">
@@ -62,7 +64,7 @@ const Contact = () => {
                                 <textarea name="message" id="" cols="30" rows="10" placeholder='write message' className='resize-none textarea textarea-secondary bg-transparent' required></textarea>
                             </div>
                             <div className="mt-6">
-                            <button className="btn btn-active btn-secondary">Send Message</button>
+                            <button className="btn btn-active btn-secondary">Send Message <FaPaperPlane></FaPaperPlane> </button>
                             </div>
                         </form>
                     </div>

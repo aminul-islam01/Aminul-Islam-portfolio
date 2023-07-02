@@ -1,4 +1,5 @@
 import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import logo from '../assets/images/logo.png'
 
 
 const Footer = () => {
@@ -6,7 +7,9 @@ const Footer = () => {
         <div>
             <footer className="footer footer-center p-10 bg-base-300 text-base-content">
                 <div>
-                    <a className="text-xl font-bold cursor-pointer font-serif text-green-500">AMINUL <span className="text-red-500">ISLAM </span>BIDDUT</a>
+                    <a>
+                        <img className="w-80 cursor-pointer" src={logo} alt="" />
+                    </a>
                     <div className="space-x-3">
                         <span className="cursor-pointer"><FaEnvelope className="inline-block"></FaEnvelope> aminulislambiddut1@gmail.com</span>
                         <span className="cursor-pointer"><FaPhoneAlt className="inline-block"></FaPhoneAlt> +8801922112718</span>
