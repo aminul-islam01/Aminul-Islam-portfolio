@@ -9,7 +9,9 @@ import { FaArrowRight, FaGithubSquare } from 'react-icons/fa';
 const Projects = () => {
     return (
         <div id='projects' className='py-10 bg-base-300'>
-            <h2 className='text-3xl font-semibold text-center mb-10'>Projects</h2>
+            <h2 className='text-3xl font-semibold text-center mb-10'>
+                <span className='border-double border-b-4 border-indigo-500'>Projects</span>
+            </h2>
             <div className='space-y-14'>
                 <div className='md:flex md:flex-row-reverse items-center gap-10 px-10'>
                     <Fade right>

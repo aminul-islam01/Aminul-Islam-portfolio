@@ -2,3 +2,9 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
+.active{
+  background-color: transparent !important;
+  color: red !important;
+  border-bottom: 2px solid red;
+}

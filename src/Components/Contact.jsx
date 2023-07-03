@@ -29,7 +29,9 @@ const Contact = () => {
 
     return (
         <div id='contact' className='mb-5'>
-            <h2 className='text-3xl font-semibold text-center mt-10'>Contact Me</h2>
+            <h2 className='text-3xl font-semibold text-center mt-10 '>
+                <span className='border-double border-b-4 border-indigo-500'>Contact Me</span>
+            </h2>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left">
