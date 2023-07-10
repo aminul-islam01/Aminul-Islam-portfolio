@@ -8,3 +8,7 @@
   color: red !important;
   border-bottom: 2px solid red;
 }
+.navbar {
+  max-width: 1280px;
+  margin: 0 auto;
+}

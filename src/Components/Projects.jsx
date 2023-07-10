@@ -8,7 +8,7 @@ import { FaArrowRight, FaGithubSquare } from 'react-icons/fa';
 
 const Projects = () => {
     return (
-        <div id='projects' className='py-10 bg-base-300'>
+        <div id='projects' className='py-16 bg-base-300'>
             <h2 className='text-3xl font-semibold text-center mb-10'>
                 <span className='border-double border-b-4 border-indigo-500'>Projects</span>
             </h2>

@@ -31,29 +31,29 @@ const Navbar = () => {
 
 
     const navItem = <>
-        <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} >
+        <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500} >
           HOME
         </Link>
         </li>
-        <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} >
+        <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={1} duration={500} >
           ABOUT
         </Link>
         </li>
-        <li><Link activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500} >
+        <li><Link activeClass="active" to="skills" spy={true} smooth={true} offset={2} duration={500} >
           Skills
         </Link>
         </li>
-        <li><Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500} >
+        <li><Link activeClass="active" to="projects" spy={true} smooth={true} offset={3} duration={500} >
           PROJECT
         </Link>
         </li>
-        <li><Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} >
+        <li><Link activeClass="active" to="contact" spy={true} smooth={true} offset={4} duration={500} >
           CONTACT
         </Link>
         </li>
     </>
     return (
-        <div className="navbar sticky top-0 left-0 z-10 bg-base-100 opacity-80">
+        <div className="navbar fixed top-0 z-10 bg-base-100 opacity-80 mx-auto">
             <div className="navbar-start flex-1">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
